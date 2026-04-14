@@ -1,67 +1,72 @@
-About
-Memora helps you memorize anything using scientifically proven spaced repetition. Create flashcards, review them daily, and the algorithm manages your schedule automatically — cards you know get pushed further out, cards you struggle with come back sooner.
+# Memora 🧠
+Flashcard learning app built with Flutter. Uses spaced repetition (Leitner system) to help you memorize anything effectively.
 
-This is v1.0 — a fully working first release. Core learning loop is complete. New features and improvements are planned (see Roadmap).
+> **v1.0** — First release. Core learning loop is complete. More features coming in future versions.
 
+## Features
+- Create flashcards with question & answer
+- Spaced repetition algorithm — interval doubles on correct answer, resets on wrong
+- Review sessions with live progress tracking
+- Statistics page — accuracy, points, level, max streak
+- Gamification — earn points, level up
+- Push notification reminders with custom intervals
+- Fully offline — no internet required
 
-Features
+## Tech Stack
+- **Flutter** - UI Framework
+- **BLoC** - State Management
+- **Isar** - Local Database
+- **GoRouter** - Navigation
+- **flutter_local_notifications** - Push Reminders
 
-Create flashcards with question & answer
-Spaced repetition via Leitner algorithm
-Review sessions with progress tracking
-Learning statistics (accuracy, points, level, streaks)
-Gamification — points system and levels
-Local push notification reminders with custom intervals
-Fully offline — no internet required
-Clean Material 3 UI
-
-
-Tech Stack
-FrameworkFlutter / DartState Managementflutter_blocNavigationGoRouterLocal DatabaseIsarArchitectureClean ArchitectureNotificationsflutter_local_notifications
-
-Architecture
-The project follows Clean Architecture with three strict layers:
-presentation  →  domain  ←  data
+## Architecture
+Clean Architecture with strict layer separation:
+```
 lib/
 ├── core/
-│   ├── components/
-│   ├── router/
-│   └── theme/
+│   ├── components/       # Reusable widgets
+│   ├── router/           # GoRouter config
+│   └── theme/            # Material 3 theme
 └── features/
     └── cards/
-        ├── data/
-        │   ├── models/
-        │   └── repositories/
-        ├── domain/
-        │   ├── entities/
-        │   ├── repositories/
-        │   └── usecases/
-        └── presentation/
-            ├── bloc/
-            ├── pages/
-            └── widgets/
+        ├── data/          # Isar models, repository impl
+        ├── domain/        # Entities, use cases, interfaces
+        └── presentation/  # BLoC, pages, widgets
+```
 
-Getting Started
-Prerequisites
+## Spaced Repetition Algorithm
+```
+✅ Correct:  interval = min(interval × 2, 30 days)
+❌ Wrong:    interval = 1 day (reset)
+```
+Cards start at 1-day interval. Each correct answer doubles it up to 30 days max.
 
-Flutter SDK >=3.0.0
-Dart SDK >=3.0.0
+## Getting Started
+1. Clone the repository
+2. Install dependencies: `flutter pub get`
+3. Generate Isar schemas: `dart run build_runner build`
+4. Run the app: `flutter run`
 
-Installation
-bash# Clone the repo
-git clone https://github.com/abror787/memora.git
-cd memora
+## Screenshots
+<p float="left">
+  <img src="screenshots/home.jpg" width="200"/>
+  <img src="screenshots/add_card.jpg" width="200"/>
+  <img src="screenshots/review_question.jpg" width="200"/>
+  <img src="screenshots/review_answer.jpg" width="200"/>
+</p>
+<p float="left">
+  <img src="screenshots/review_result.jpg" width="200"/>
+  <img src="screenshots/stats.jpg" width="200"/>
+  <img src="screenshots/notifications.jpg" width="200"/>
+  <img src="screenshots/card_preview.jpg" width="200"/>
+</p>
 
-# Install dependencies
-flutter pub get
+## Roadmap
+- [ ] Dark mode
+- [ ] Card decks / categories
+- [ ] Import from CSV
+- [ ] Cloud sync (Firebase / Supabase)
+- [ ] AI-generated flashcards
 
-# Generate Isar schemas
-dart run build_runner build
-
-# Run the app
-flutter run
-
-Spaced Repetition Algorithm
-✅ Correct answer:  interval = min(interval × 2, 30 days)
-❌ Wrong answer:    interval = 1 day (reset)
-Cards start with a 1-day interval. Each correct answer doubles the interval up to a maximum of 30 days. Wrong answers reset the card back to day 1.
+---
+Built with ❤️ using Flutter
