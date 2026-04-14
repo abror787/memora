@@ -69,4 +69,4 @@ Cards start at 1-day interval. Each correct answer doubles it up to 30 days max.
 - [ ] AI-generated flashcards
 
 ---
-Built with ❤️ using Flutter
+Built with using Flutter
