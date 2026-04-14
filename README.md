@@ -48,23 +48,23 @@ Cards start at 1-day interval. Each correct answer doubles it up to 30 days max.
 4. Run the app: `flutter run`
 
 ## Screenshots
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/1main_screen.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/1main_screen.jpg)
 
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/timer_screen2.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/timer_screen2.jpg)
 
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/notification3.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/notification3.jpg)
 
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/statistics_screen4.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/statistics_screen4.jpg)
 
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/new_card_screen5.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/new_card_screen5.jpg)
 
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/repeat_screen6.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/repeat_screen6.jpg)
 
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/check_memory_screen7.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/check_memory_screen7.jpg)
 
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/check_right_or_wrong_screen8.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/check_right_or_wrong_screen8.jpg)
 
-!{Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/result_screen9.jpg)
+![Image](https://github.com/abror787/memora/blob/04b902da785e936ab75739f762bb1f249945608a/result_screen9.jpg)
 
 ## Roadmap
 - [ ] Dark mode
